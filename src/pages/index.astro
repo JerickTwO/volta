@@ -1,0 +1,35 @@
+---
+import Card from "@/main/Card.astro";
+import KeyMetrics from '@/main/KeyMetrics.astro';
+import Standard from "@/main/Standard.astro";
+import Accordion from "@/main/Accordion.astro";
+import Layout from "../layouts/Layout.astro";
+import ChatBot from "@/main/ChatBot.astro";
+import Carousel from "@/main/Carousel.astro";
+import Cta from "@/main/Cta.astro";
+import Hero from "@/main/Hero.astro"
+import Header from "@/main/Header.astro";
+---
+
+<Layout title="Alessandro Volta ">
+  <Carousel />
+  <main class="px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+    <hr class="py-10">
+    <Header/>
+    <hr class="py-10">
+    <Hero/>
+    <hr class="py-10">
+	  <Card/>
+    <hr class="py-10">  
+    <KeyMetrics />
+    <hr class="py-10">
+    <Accordion />
+    <hr class="py-10">
+    <Standard />
+    <hr class="py-10">
+    <Cta />
+    <hr class="py-10">
+    <ChatBot />
+  </main>
+  
+</Layout>

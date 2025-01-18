@@ -1,0 +1,29 @@
+{
+  "name": "ueavolta2",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@heroicons/react": "^2.2.0",
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.10",
+    "amqplib": "^0.10.5",
+    "astro": "^4.10.2",
+    "astro-icon": "^1.1.2",
+    "date-fns": "^4.1.0",
+    "flowbite": "^2.5.2",
+    "lucide-react": "^0.460.0",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "devDependencies": {
+    "@iconify/tailwind": "^1.1.3"
+  }
+}

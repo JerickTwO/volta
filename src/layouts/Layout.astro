@@ -1,0 +1,53 @@
+---
+import Header from "@/Navbar.astro";
+import Footer from "@/Footer.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="./public/volta_logo.png" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js" defer
+    ></script>
+    <script
+      src="https://files.bpcontent.cloud/2024/10/18/13/20241018131241-T8Z4WFSM.js"
+      defer></script>
+    <title>{title}</title>
+  </head>
+  <body class="flex w-full items-center justify-center flex-col">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+  ></script>
+</html>
+<style is:global>
+  * {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    background-color: white;
+  }
+</style>

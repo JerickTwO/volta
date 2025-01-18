@@ -1,0 +1,35 @@
+---
+const features = [
+  { title: "Excelencia Académica", description: "Programas educativos de alta calidad", icon: "🎓" },
+  { title: "Instalaciones Modernas", description: "Espacios diseñados para el aprendizaje", icon: "🏫" },
+  { title: "Actividades Extracurriculares", description: "Desarrollo integral del estudiante", icon: "🏅" },
+  { title: "Tecnología Avanzada", description: "Herramientas para el futuro", icon: "💻" },
+];
+---
+
+<section class="py-16 ">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-800">
+      ¿Por qué elegirnos?
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {features.map((feature) => (
+        <div class="bg-gradient-to-tr from-white to-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 group">
+          <!-- Icono -->
+          <div class="text-5xl mb-4 text-blue-600 group-hover:text-blue-800 transition-colors duration-300">
+            {feature.icon}
+          </div>
+          <!-- Título -->
+          <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-800 transition-colors duration-300">
+            {feature.title}
+          </h3>
+          <!-- Descripción -->
+          <p class="font-medium text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
+            {feature.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
