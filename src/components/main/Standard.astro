@@ -3,17 +3,17 @@ const abanderados = [
   {
     nombre: "Jefferson Intriago",
     descripcion: "Abanderado de Mecánica.",
-    imagen: "/images/juan.jpg",
+    imagen: "./user.jpeg",
   },
   {
     nombre: "Janela Hinojosa",
     descripcion: "Abanderada de Informática.",
-    imagen: "/images/maria.jpg",
+    imagen: "./user.jpeg",
   },
   {
     nombre: "Francisco Santos",
     descripcion: "Abanderado de Electrónica.",
-    imagen: "/images/pedro.jpg",
+    imagen: "./user.jpeg",
   },
 ];
 ---
@@ -29,7 +29,7 @@ const abanderados = [
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-7xl mx-auto">
     {abanderados.map((abanderado) => (
       <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6">
-        <div class="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-gray-300 shadow-md mb-4 transform group-hover:scale-110 transition-transform duration-300">
+        <div class="relative w-24 h-24 mx-auto  overflow-hidden border-4 mb-4 transform group-hover:scale-110 transition-transform duration-300">
           <img 
             src={abanderado.imagen} 
             alt={abanderado.nombre} 
